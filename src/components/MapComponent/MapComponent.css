@@ -1,0 +1,35 @@
+.MapContainer {
+  margin: 3rem 0rem;
+}
+
+.Marker {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.Engineer-123 {
+  background-color: green;
+}
+
+.Engineer-124 {
+  background-color: navy;
+}
+
+.Engineer-125 {
+  background-color: yellow;
+}
+
+.Engineer-126 {
+  background-color: red;
+}
+
+.Header {
+  margin: 0.4rem 0rem;
+}
+
+.Paragraph {
+  margin: 0.3rem 0rem;
+  font-size: 0.7rem;
+}
