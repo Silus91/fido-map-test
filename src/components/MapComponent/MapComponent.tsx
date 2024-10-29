@@ -49,6 +49,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ mapData }) => {
             anchor='top'
           >
             <div>
+              <h5 className='Header'>Engineer ID: {selectedLocation.engineerId}</h5>
               <h5 className='Header'>Status: {selectedLocation.status}</h5>
               <p className='Paragraph'>{selectedLocation.information}</p>
               <p className='Paragraph'>
