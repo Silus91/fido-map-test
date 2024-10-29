@@ -8,6 +8,7 @@ import "./App.css";
 const App: React.FC = () => (
   <div className='Container'>
     <MapComponent mapData={mapdata.mapData} />
+    <Table data={mapdata.mapData} />
   </div>
 )
 
