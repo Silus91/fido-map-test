@@ -1,21 +1,17 @@
-export type DataType = {
-  id: number;
-  notes: string;
-  engineerId: number;
-  coords: [number, number];
-}[];
+declare namespace FidoTest {
 
-export type ImportedDataType = {
-  mapData: {
-    id: number;
-    engineerId: number;
-    status: string;
-    startDate: string;
-    endDate: string;
-    information: string;
-    coords: {
-      lat: number;
-      lng: number;
-    };
-  }[];
-};
+  export interface Coord {
+    lat: number
+    lng: number
+  }
+
+  export interface MapDataItem {
+    id: number
+    engineerId: number
+    status?: string
+    startDate?: string
+    endDate?: string
+    information: string
+    coords: Coord
+  }
+}
