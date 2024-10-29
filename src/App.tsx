@@ -1,19 +1,15 @@
-import "./App.css";
-import Map from "./components/Map";
+import React from 'react';
+import MapComponent from "./components/MapComponent";
 import Table from "./components/Table";
+import mapdata from "./data.json";
 
-function App() {
-  const processedData: any[] = [];
-  return (
-    <div className="app">
-      <h1>Map</h1>
-      <Map data={processedData} />
-      <div>
-        <h1>Table</h1>
-        <Table data={processedData} />
-      </div>
-    </div>
-  );
-}
+import "./App.css";
+
+const App: React.FC = () => (
+  <div className='Container'>
+    <h1>Map</h1>
+    <MapComponent mapData={mapdata.mapData} />
+  </div>
+)
 
 export default App;
